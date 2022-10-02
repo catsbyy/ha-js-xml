@@ -32,7 +32,7 @@ var xmlString =
   "           <middle_name>Сергійович</middle_name> " +
   "       </name> " +
   "       <education>Вища освіта</education> " +
-  "       <position>Middle Software Engineer</position> " +
+  "       <position>Middle Software Developer</position> " +
   "       <degree>Бакалавр комп'ютерних наук</degree> " +
   "       <salary>60000</salary> " +
   "   </worker> " +
@@ -80,7 +80,7 @@ function searchEmployee(e) {
 
   for (var i = 0; i < children.length; i++) {
     var child = children[i];
-    
+
     if (child.nodeType == Node.ELEMENT_NODE) {
       var lastNameElement = child.getElementsByTagName("last_name")[0];
       var firstNameElement = child.getElementsByTagName("first_name")[0];
